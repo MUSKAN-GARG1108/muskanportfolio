@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script
+      src="https://kit.fontawesome.com/db2db26efc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+
+
+    <!-- Navbar -->
+    <nav class="hidden">
+      <ul>
+        <li><a class="home hideonmobile" href="#home">Home</a></li>
+        <li><a class="pro hideonmobile" href="#pro">Projects</a></li>
+        <li><a class="tech hideonmobile" href="#tech">Technical Skills</a></li>
+        <li><a class="ach hideonmobile" href="#ach">Achievements</a></li>
+        <li><a class="resume hideonmobile" href="https://drive.google.com/file/d/14dC-rOZibFMMHnN8sqNaPC25z8cXYTCq/view?usp=drive_link" target="_blank">Get My Resume</a></li>
+        <li><a class="hireme hideonmobile" href="mailto:muskangarg1108@gmail.com">Hire Me</a></li>
+        <li onclick=showSidebar()><a class="menu" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+
+      
+    </nav>
+    <div class="navbar">
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a class="close" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a class="home" href="#home">Home</a></li>
+        <li><a class="pro" href="#pro">Projects</a></li>
+        <li><a class="tech" href="#tech">Technical Skills</a></li>
+        <li><a class="ach" href="#ach">Achievements</a></li>
+        <li><a href="https://drive.google.com/file/d/14dC-rOZibFMMHnN8sqNaPC25z8cXYTCq/view?usp=drive_link" target="_blank">Get My Resume</a></li>
+        <li><a href="mailto:muskangarg1108@gmail.com">Hire Me</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Section -->
+    <div class="icons hidden" id="home">
+        <a class="linkedin" href="https://www.linkedin.com/in/muskan-garg-25538b227/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+        <a class="github" href="https://github.com/MUSKAN-GARG1108" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+        <a class="gfg" href="https://linktr.ee/muskangarg1108?utm_source=linktree_admin_share" target="_blank"><i class="fa-solid fa-code fa-2xl"></i></i></a>
+    </div>
+
+    <!-- home -->
+    <div class="social content">
+      <div>
+        <img src="web_d_icon.jpeg" alt="" />
+        <h1>Hi, I am <span id="typed"></span></h1>
+      </div>
+    </div>
+
+    
+
+    <!-- Content Section -->
+    <div class="content-section main-content">
+      <!-- Projects Area -->
+      <div id="pro"></div>
+      <br /><br />
+      <h3 class="font2rem hidden">Projects</h3>
+      <div class="projectcard12 hidden">
+        <a href="https://eduvoxcom.netlify.app/" target="_blank" class="card">
+          <img class="projectpic" src="eduvox-pic.png" alt="Card Image" />
+          <div class="card-content">
+            <div class="card-title card-title-up">
+                EduVox - Learning web app for visually impaired students
+              <i class="fa-solid fa-arrow-up-right"></i>
+            </div>
+            <div class="card-text">
+                EduVox is a learning platform designed to improve the educational experience of visually impaired students. It incorporates a text-to-speech API that converts text PDFs into audio, effectively addressing a real-world problem.
+              <p class="card-title">Tech stack used:</p>
+            </div>
+            <div class="tech1">
+              <div class="techst">HTML</div>
+              <div class="techst">CSS</div>
+              <div class="techst javascript">JavaScript</div>
+              <div class="techst">Node.js</div>
+              <div class="techst javascript">Express.js</div>
+              <div class="techst javascript">MongoDB</div>
+              <div class="techst javascript">Python</div>
+              <div class="techst">API</div>
+              <div class="techst javascript">Bootstrap</div>
+            </div>
+          </div>
+        </a>
+        <a href="https://accialertstats.netlify.app/" target="_blank" class="card">
+          <img src="accialert.png" alt="Card Image" />
+          <div class="card-content">
+            <div class="card-title card-title-up">
+                Analysing Accident Prone regions
+              <i class="fa-solid fa-arrow-up-right"></i>
+            </div>
+            <div class="card-text">
+                My dynamic web application analyzes accident-prone regions using a comprehensive dataset to enhance safety awareness. It integrates data analysis and visualization techniques, providing stakeholders with robust insights for informed decision-making.
+              <p class="card-title">Tech stack used:</p>
+            </div>
+            <div class="tech1">
+              <div class="techst">HTML</div>
+              <div class="techst">CSS</div>
+              <div class="techst javascript">JavaScript</div>
+              <div class="techst javascript">Python</div>
+              <div class="techst javascript">Bootstrap</div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="projectcard12 hidden">
+        <a href="https://example.com"  target="_blank" class="card">
+          <img src="Porfolio-pic.png" alt="Card Image" />
+          <div class="card-content">
+            <div class="card-title card-title-up">
+              Build a Porfolio
+              <i class="fa-solid fa-arrow-up-right"></i>
+            </div>
+            <div class="card-text">
+              My portfolio presents a comprehensive overview of my work in Web Development, highlighting projects that demonstrate my proficiency in the same. It includes examples of my projects, offering insights into my expertise and professional journey.
+              <p class="card-title">Tech stack used:</p>
+            </div>
+            <div class="tech1">
+              <div class="techst">HTML</div>
+              <div class="techst">CSS</div>
+              <div class="techst javascript">JavaScript</div>
+            </div>
+          </div>
+        </a>
+        <a href="https://muskan-garg1108.github.io/2048-Game/" target="_blank" class="card">
+          <img class="game" src="2048game.png" alt="Card Image" />
+          <div class="card-content">
+            <div class="card-title card-title-up">
+                2048 Puzzle game
+              <i class="fa-solid fa-arrow-up-right"></i>
+            </div>
+            <div class="card-text">
+                A slide-blocking puzzle game, Implemented using HTML, CSS, and JavaScript, designed and implemented game
+                logic algorithms.
+              <p class="card-title">Tech stack used:</p>
+            </div>
+            <div class="tech1">
+              <div class="techst">HTML</div>
+              <div class="techst">CSS</div>
+              <div class="techst javascript">JavaScript</div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Technical Skills -->
+      <div id="tech"></div>
+      <br /><br />
+      <h3 class="font2rem hidden">Technical Skills</h3>
+
+      <div class="webd hidden">
+        <div class="font18rem">FrontEnd</div>
+        <div class="webd-icon frontback">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="HTML5">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS3">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="Bootstrap">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS">
+        </div>
+      </div>
+
+      
+      <div class="webd hidden">
+        <div class="font18rem">Backend</div>
+        <div class="webd-icon frontback">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js">
+          <img src="express.png" alt="Express.js">
+        </div>
+      </div>
+      <div class="webd hidden">
+        <div class="font18rem">DataBase</div>
+        <div class="webd-icon database">
+          <img src="mongodb.png" alt="MongoDB">
+          <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" alt="MySQL">
+        </div>
+      </div>
+
+
+      <div class="webd hidden">
+        <div class="font18rem">Languages</div>
+        <div class="webd-icon languages">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Python.svg" alt="Python">
+        </div>
+      </div>
+
+
+      
+      <div class="webd hidden">
+        <div class="font18rem">Tools</div>
+        <div class="webd-icon tools">
+          <img src="git.png" alt="">
+          <i class="fa-brands fa-github fa-2x"></i>
+          <img src="vscode.png" alt="">
+        </div>
+      </div>
+      
+      <div class="webd hidden">
+        <div class="font18rem">Data Structures and Algorithm</div>
+      </div>
+
+    </div>
+
+    <!-- Achievements -->
+    <div id="ach"></div>
+    <br /><br />
+    <div class="achn">
+        <h3 class="font2rem hidden">Achievements</h3>
+        <ul class="hidden">
+          <li>Intercollege selection in SIH</li>
+          <li>Runner-up in intercollege Hackathon</li>
+          <li>700+ questions on Leetcode (1470 rating)</li>
+          <li>5 Star on HackerRank in C and C++</li>
+          <li>Institute Rank 159 on GFG</li>
+          <li>GSSOC 2024</li>
+          <li>Finalist in YourStory Digital Innovation Hackathon</li>
+          <li>Finalist in HumanAIze Hackathon</li>
+        </ul>
+    </div>
+
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+
+        const icons = document.querySelector('.icons')
+        icons.style.display = 'node'
+
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,450 @@
+/* styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    /* padding-top:60px; */
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    color: rgba(255, 255, 255, 0.796);
+    background-color: #000000; 
+    /* font-family: "Playwrite NG Modern", cursive; */
+    /* font-family: "Playwrite DE Grund", cursive; */
+    font-family: sans-serif;
+}
+
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(80);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px); /* Adjust this value for the desired effect */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px); /* Keep the initial state same as the starting keyframe */
+}
+
+.visible {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+
+.icons{
+    text-align: right;
+    margin: 0px 60px 0px 0px;
+}
+.icons a{
+    margin: 0px 15px;
+    top: 0px;
+    right: 10px;
+    
+}
+.icons a i{
+    transition: transform 0.5s ease;
+}
+.icons a i:hover{
+    
+    transform: scale(1.3);
+}
+
+nav {
+    position: sticky;
+    margin-bottom: 40px;
+    top: 0px;
+    background-color: rgb(0, 0, 0);
+    /* padding: 0px 0px 0px 0px; */
+    z-index: 2;
+    /* background-attachment: fixed; */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+    margin-top: 10px;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    padding: 10px;
+    color: white;
+    display: block;
+    transition: background-color 0.9s ease;
+}
+
+nav  li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+nav ul li a.active {
+    color: white;
+    background-color: rgb(22, 181, 234);
+}
+
+nav  .menu{
+    display: none;
+    padding:0px;
+}
+nav .menu:hover{
+    background-color: black;
+    color: white;
+}
+
+nav .close:hover{
+    background-color:rgba(255, 255, 255, 0.292);
+    color: white;
+}
+
+.navbar {
+    position: sticky;
+    margin-bottom: 40px;
+    top: 0px;
+    background-color: rgb(0, 0, 0);
+    /* padding: 0px 0px 0px 0px; */
+    z-index: 2;
+    /* background-attachment: fixed; */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-top: 10px;
+}
+
+.navbar ul li a {
+    font-size: 1.2rem;
+    padding: 10px;
+    color: black;
+    display: block;
+
+}
+
+.navbar  li a:hover {
+    background-color: rgba(0, 0, 0, 0.148);
+    /* color: white; */
+    border-radius: 5px;
+}
+
+.sidebar{
+    /* backdrop-filter: blur(50px); */
+    position: fixed;
+    top:0px;
+    right:0px;
+    height: 400px;
+    width:250px;
+    z-index: 1000;
+    background-color: rgb(255, 255, 255);
+    /* color:black; */
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-shadow: -10px 0px 10px rgba(0,0,0,0.1);
+}
+.sidebar li{
+    width:100%;
+}
+.sidebar li a{
+    padding: 10px;
+    width: 100%;
+    transition: background-color 0.9s ease;
+    color: black;
+}
+.sidebar li:hover{
+    z-index:100px;
+}
+ .resume{
+    border:2px solid white;
+    border-radius: 50px;
+    transition: background-color 0.9s ease;
+}
+ .resume:hover{
+    border-radius: 50px;
+}
+ .hireme{
+    text-align: center;
+    border:2px solid white;
+    border-radius: 50px;
+    width: 100px;
+    transition: background-color 0.9s ease;
+}
+ .hireme:hover{
+    border-radius: 50px;
+    
+}
+.social {
+    text-align: center;
+    margin: 30px 0px;
+    padding: 5px;
+    /* background: rgba(0, 0, 0, 0.7); */
+    border-radius: 10px;
+    animation: slideUp 1s ease-out;
+}
+
+.social img{
+    border-radius: 50%;
+    width: 170px;
+}
+
+.social h1 {
+    font-size: 2.5rem;
+    /* font-family: "Playwrite NG Modern", cursive; */
+    font-family: "Playwrite DE Grund", cursive;
+}
+.social h1 span{
+    color:white;
+}
+
+.social div {
+    margin: 10px 0;
+}
+
+.social p {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+h2, h3, h4 {
+    margin: 20px 0px;
+}
+
+
+.content-section{
+    margin-left:10px;
+    animation: slideUp 1s ease-out;
+}
+
+.font2rem{
+    font-size: 2rem;
+}
+.projectcard12{
+    display:flex;
+    font-family: "Playwrite DE Grund", cursive;
+}
+
+.card {
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: nowrap; */
+    width: 700px;
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 25px 30px;
+}
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #86bff23c;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.541);
+    .card-title{
+        color: #00C4B4;
+    }
+    .card-title::after{
+        transform: translateY(-5px);
+    }
+}
+.card img {
+    padding:9px;
+    width: 300px;
+    width: 350px;
+    object-fit: cover;
+    margin: 3px 100px;
+}
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    color: #ffffff; /* Title color */
+}
+.card-title-up::after {
+    content: '↗';
+}
+
+.card-text {
+    font-size: 0.9em;
+    color: #CFCFCF; /* Text color */
+}
+.tech1{
+    display:flex;
+    flex-wrap: wrap;
+}
+.techst{
+    margin:5px;
+    border:2px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2px;
+    width: 58px;
+}
+.javascript{
+    width:85px;
+}
+/* .techst:hover{
+    border-radius: 50px;
+} */
+
+.game{
+    width: 50px;
+}
+.box {
+    background-color: #4c4646c8; /* Box background color */
+    color: white; /* Text color */
+    padding: 3px 9px; /* Padding inside the boxes */
+    border-radius: 6px; /* Rounded corners */
+    font-size: 12px; /* Font size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60px;
+    border-radius: 3px;
+    font-size: 1rem;
+    padding: .4rem .8rem;
+    color: #fff;
+    border: 0;
+    /* cursor: none; */
+}
+
+
+.webd{
+    display:flex;
+    margin: 40px 0px;
+    font-family: "Playwrite DE Grund", cursive;
+}
+
+.webd-icon{
+    margin-left: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.webd-icon img {
+    height: 40px; /* Adjust the height as needed */
+    margin: 5px 30px;
+}
+
+.webd .frontback{
+    margin-left: 432px;
+}
+.webd .tools{
+    margin-left: 477px;
+}
+.webd .languages{
+    margin-left: 413px;
+}
+.webd .database{
+    margin-left: 419px;
+}
+.font18rem{
+    font-size: 1.8rem;
+}
+
+.achn{
+    background-color: white;
+    color: black;
+    padding: 10px 4px;
+}
+.achn ul li{
+    font-family: "Playwrite DE Grund", cursive;
+    margin: 10px 0px;
+}
+
+@media screen and (max-width:500px){
+    .hideonmobile{
+        display: none;
+    }
+    nav .menu{
+        display: block;
+    }
+    .icons{
+        text-align: right;
+        margin: 15px 2px 0px 0px;
+    }
+    .social img{
+        width: 130px;
+    }
+    
+    .social h1 {
+        font-size: 1.8rem;
+    }
+    
+    .projectcard12{
+        flex-wrap: wrap;
+    }
+    .card img{
+        margin: 3px 0px;
+    }
+
+    .webd{
+        flex-direction: column;
+        margin:10px;
+    }
+    .web-icon{
+        margin-left: 0px;
+    }
+    .webd-icon img {
+        height: 20px; /* Adjust the height as needed */
+        margin: 10px 10px;
+        justify-content:baseline;
+    }
+    .webd .frontback{
+        margin-left: 0px;
+    }
+    .webd .tools{
+        margin-left: 0px;
+    }
+    .webd .languages{
+        margin-left: 0px;
+    }
+    .webd .database{
+        margin-left: 0px;
+    }
+}
